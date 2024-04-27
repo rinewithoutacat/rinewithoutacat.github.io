@@ -2,7 +2,7 @@ name: Updating HTML plotly stuff
 
 on:
   schedule:
-    - cron: '05 17 * * *'
+    - cron: '13 17 * * *'
 
 jobs:
   import-data:
