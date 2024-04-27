@@ -1,3 +1,5 @@
+name: Updating HTML plotly stuff
+
 on:
   schedule:
     - cron: '59 12 * * *'
