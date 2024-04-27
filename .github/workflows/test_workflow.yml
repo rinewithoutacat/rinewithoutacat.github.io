@@ -2,7 +2,7 @@ name: Update Plotly Graph Every 15 Minutes
 
 on:
   schedule:
-    - cron: '50 15 * * *'  # Runs at 11:50 am EDT (adjust as needed for your timezone)
+    - cron: '10 12 * * *'  # Runs at 12:08 am EDT (adjust as needed for your timezone)
     #- cron: '*/15 * * * *'  # Runs every 15 minutes
 
 jobs:
