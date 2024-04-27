@@ -2,11 +2,12 @@ name: Updating HTML plotly stuff
 
 on:
   schedule:
-    - cron: '13 17 * * *'
+    - cron: '23 17 * * *'
 
 jobs:
   import-data:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
