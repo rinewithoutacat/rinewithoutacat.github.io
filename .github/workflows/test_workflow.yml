@@ -1,0 +1,21 @@
+name: Update Plotly Graph Every 15 Minutes
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Runs every 15 minutes
+
+jobs:
+  update_plotly:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v1
+
+      - name: Install dependencies
+        run: Rscript -e 'install.packages("plotly")'
+
+      - name: Generate and Update Plotly Graph
+        run: Rscript R/code/test.R  # Replace path/to/your/R/script.R with the actual path to your R script
+        env:
+          GITHUB_TOKEN: ${{ secrets.TEST_TOKEN }}
