@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '35 12 * * *'
+    - cron: '59 12 * * *'
 
 jobs:
   import-data:
@@ -13,20 +13,33 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
-            any::tidyverse 
+            any::airtabler
+            any::extrafont
+            any::httr
+            any::htmlwidgets
+            any::jsonlite
+            any::lubridate
+            any::manipulateWidget
             any::plotly
+            any::scales
+            any::sf
+            any::shiny
+            any::showtext
+            any::systemfonts
+            any::tidyverse 
+            any::usmap
 
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Run script
-        run: Rscript -e 'source("Rscript R/code/test.R")'
+        run: Rscript -e 'source("bar-chart-test.R")'
         
 # Commit results--HTML file
-      - name: Commit results
+      - name: Commit results and update HTML
         run: |
           git config --local user.email "test@test.com"
           git config --local user.name "Test"
-          git add plotly_graph.html
+          git add chart1.html
           git commit -m 'Data updated' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
