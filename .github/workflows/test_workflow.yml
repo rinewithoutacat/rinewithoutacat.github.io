@@ -15,9 +15,18 @@ jobs:
         
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
+        with:
+          r-versions: 4.2.0
+          
+      - name: Install packages
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::tidyverse 
+            any::plotly
 
-      - name: Install dependencies
-        run: Rscript -e 'install.packages("plotly")'
+#      - name: Install dependencies
+#        run: Rscript -e 'install.packages("plotly")'
 
       - name: Generate and Update Plotly Graph
         run: Rscript R/code/test.R  # Replace path/to/your/R/script.R with the actual path to your R script
