@@ -1,0 +1,26 @@
+name: Update Plotly Widget
+
+on:
+  push:
+    branches:
+      - main  # Update the branch name as per your repository's main branch
+
+jobs:
+  update_widget:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v1
+
+      - name: Install dependencies
+        run: Rscript -e 'install.packages("plotly")'
+
+      - name: Generate Plotly Widget
+        run: Rscript R/code/test.R  # Replace path/to/your/R/generate_plot.R with the actual path to your R script
+
+      - name: Move HTML File to Repository
+        run: mv plotly_widget.html assets/plotly_widget.html  # Replace path/to/your/repository/plotly_widget.html with the actual filepath in your repository
