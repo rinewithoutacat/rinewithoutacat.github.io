@@ -9,7 +9,7 @@ last_name: Vieth
 contact_note: >
   Contact me via email or bsky for fastest results!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Repositories, interactive data stuff, and tests by Rine Vieth. (Check <a href="https://www.rinevieth.com">their personal website</a>  for more info!) 
+  Repositories, interactive data stuff, and tests by Rine Vieth. 
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
