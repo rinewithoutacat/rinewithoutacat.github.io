@@ -9,7 +9,7 @@ profile:
   image: vieth_headshot.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Headshot by [Dick Powis](https://dickpowis.com/about)</p>
+    <p>Headshot by [Dick Powis](https://dickpowis.com/about) </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 
