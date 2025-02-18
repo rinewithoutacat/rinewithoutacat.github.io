@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - rinewithoutacat
+  - mapping-mtl-cartographie
 
-repo_description_lines_max: 2
+ repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - mapping-mtl-cartographie/mapping-mtl-cartographie.github.io
+  - transformationsproject/tfp-r
+  - transformationsproject/transformationsproject.github.io
