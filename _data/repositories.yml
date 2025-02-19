@@ -2,7 +2,7 @@ github_users:
   - rinewithoutacat
   - mapping-mtl-cartographie
 
- repo_description_lines_max: 2
+repo_description_lines_max: 2
 
 github_repos:
   - mapping-mtl-cartographie/mapping-mtl-cartographie.github.io
