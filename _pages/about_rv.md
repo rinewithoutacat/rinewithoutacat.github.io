@@ -1,4 +1,9 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+Longer academic bio:
+Rine Vieth holds a PhD in Anthropology from McGill University, an MSc in Social Anthropology from the London School of Economics and Political Science, an MA in Islamic Law from SOAS, and a BA in History (major) and Russian Literature and Language (minor) from Colby College.
+
+If given the choice, they can be found near bodies of water, in a sunny corner of a library, or up to their elbows in dirt while growing plants. 
+
 
 Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
